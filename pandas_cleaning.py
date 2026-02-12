@@ -130,11 +130,11 @@ print("Start to load 4 000 000 rows")
 
 # Load data to database
 df_nyc_taxi.to_sql(
-    'nyc_taxi_trips', 
+    'nyc_taxi_trips_pandas', 
     con=engine, 
     if_exists='replace', 
     index=False,
     chunksize=100000 
 )
 
-print("Data in base")
+print("Congratulations! All data in database")
