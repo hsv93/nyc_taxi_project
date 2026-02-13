@@ -9,6 +9,8 @@ The core of the project is a comparative analysis: I implemented data cleaning a
 
 After processing, I performed a data validation and performance comparison between both methods to determine the most efficient workflow for this scale of data.
 
+Also add two dimentions with payments and zones
+
 ## Tech Stack
 * **Language:** Python / SQL
 * **Libraries:** Pandas, NumPy, SQLAlchemy, PyODBC
