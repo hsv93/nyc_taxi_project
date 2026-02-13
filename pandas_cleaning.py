@@ -104,9 +104,9 @@ from sqlalchemy import create_engine, event
 
 # Connecting to docker
 server = 'localhost,1433'
-database = 'NYC_taxi_base' # або твоя БД
+database = 'NYC_taxi_base'
 username = 'sa'
-password = 'SuperPassword91'
+password = 'PASSWORD'
 
 #Microsoft ODBC Driver
 params = urllib.parse.quote_plus(
