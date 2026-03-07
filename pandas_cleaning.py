@@ -98,7 +98,6 @@ df_nyc_taxi['is_short_trip'] = (df_nyc_taxi['trip_distance'] < 0.5) | (df_nyc_ta
 
 #Create connecting to database
 
-from sqlalchemy import create_engine
 import urllib
 from sqlalchemy import create_engine, event
 
@@ -126,7 +125,7 @@ def receive_before_cursor_execute(conn, cursor, statement, parameters, context, 
         cursor.fast_executemany = True
 
 
-print("Start to load 4 000 000 rows")
+print("Start to load 3 000 000 rows")
 
 # Load data to database
 df_nyc_taxi.to_sql(
